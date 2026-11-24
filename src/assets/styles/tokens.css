@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&display=swap');
+
+:root {
+  /* Palette */
+  --forest-950: #051F20;
+  --forest-900: #0B2B26;
+  --forest-800: #163832;
+  --forest-700: #235347;
+  --sage-400: #8EB69B;
+  --mint-100: #DAF1DE;
+
+  /* Brand */
+  --color-primary: #235347;
+  --color-primary-hover: #163832;
+  --color-primary-active: #0B2B26;
+  --color-primary-contrast: #FFFFFF;
+  --color-secondary: #DAF1DE;
+  --color-secondary-hover: #C6E6CC;
+  --color-secondary-active: #B3DBBB;
+  --color-secondary-contrast: #163832;
+  --color-accent: #8EB69B;
+  --color-accent-hover: #7AA689;
+  --color-accent-active: #679577;
+  --color-ink: #051F20;
+
+  /* Surface and text */
+  --bg-page: #F5FAF6;
+  --bg-surface: #FFFFFF;
+  --bg-surface-tint: #EAF6ED;
+  --bg-inverse: #051F20;
+  --bg-inverse-raised: #0B2B26;
+  --border-default: #D5E6D9;
+  --border-strong: #8EB69B;
+  --border-inverse: #235347;
+  --text-primary: #051F20;
+  --text-secondary: #3F5A53;
+  --text-muted: #5E766C;
+  --text-inverse: #DAF1DE;
+  --text-inverse-muted: #8EB69B;
+  --text-on-image: #FFFFFF;
+
+  /* Semantic */
+  --success: #237A4B;
+  --success-bg: #E3F4E8;
+  --warning: #8A5A0B;
+  --warning-bg: #FFF3DC;
+  --warning-fill: #E0A030;
+  --error: #B3261E;
+  --error-bg: #FDE8E6;
+  --info: #1F6F8B;
+  --info-bg: #E3F1F6;
+  --rating: #F5B83D;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+
+  /* Radius */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(5, 31, 32, 0.06);
+  --shadow-sm: 0 4px 12px rgba(5, 31, 32, 0.06);
+  --shadow-md: 0 12px 32px rgba(5, 31, 32, 0.08);
+  --shadow-lg: 0 24px 64px rgba(5, 31, 32, 0.12);
+  --shadow-nav: 0 8px 24px rgba(5, 31, 32, 0.18);
+  --shadow-page: 0 32px 96px rgba(5, 31, 32, 0.10);
+
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system,
+    'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.photo-overlay,
+.photo-overlay-hero {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.photo-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 31, 32, 0) 40%,
+    rgba(5, 31, 32, 0.75) 100%
+  );
+}
+
+.photo-overlay-hero {
+  background: linear-gradient(
+    180deg,
+    rgba(5, 31, 32, 0.35) 0%,
+    rgba(5, 31, 32, 0.1) 50%,
+    rgba(5, 31, 32, 0.45) 100%
+  );
+}
+
+.glass-dark,
+.glass-light {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.glass-dark {
+  background: rgba(5, 31, 32, 0.35);
+  border: 1px solid rgba(218, 241, 222, 0.18);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
